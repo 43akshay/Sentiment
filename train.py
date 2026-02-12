@@ -104,10 +104,9 @@ def train(data_path, epochs=3, batch_size=16):
         weight_decay=0.01,
         logging_dir="./outputs/logs",
         logging_steps=1,
-        eval_strategy="epoch" if len(dataset) >= 2 else "no",
+        evaluation_strategy="epoch" if len(dataset) >= 2 else "no",
         save_strategy="epoch" if len(dataset) >= 2 else "no",
         load_best_model_at_end=True if len(dataset) >= 2 else False,
-        no_cuda=(device == "cpu"),
     )
 
     trainer = Trainer(

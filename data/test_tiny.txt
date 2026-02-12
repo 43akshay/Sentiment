@@ -1,0 +1,2 @@
+test text;joy
+test text 2;sadness
