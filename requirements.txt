@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+transformers
+torch
+datasets
+pandas
+scikit-learn
+streamlit
+python-multipart
+evaluate
+accelerate

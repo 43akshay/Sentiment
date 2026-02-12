@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+venv/
+env/
+models/sentiment_model/
+outputs/
+*.log
+.pytest_cache/
