@@ -1,5 +1,5 @@
 import torch
-from transformers import DistilBertTokenizer, DistilBertForSequenceClassification
+from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import os
 import json
 from preprocess import preprocess_text
@@ -15,16 +15,21 @@ class ModelService:
             return
 
         print(f"Loading model from {model_path}...")
-        self.tokenizer = DistilBertTokenizer.from_pretrained(model_path)
-        self.model = DistilBertForSequenceClassification.from_pretrained(model_path)
+        self.tokenizer = AutoTokenizer.from_pretrained(model_path)
+        self.model = AutoModelForSequenceClassification.from_pretrained(model_path)
+
+        # Move model to available device
+        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        self.model.to(self.device)
+        self.model.eval()
 
         mapping_path = os.path.join(model_path, "label_mapping.json")
         if os.path.exists(mapping_path):
-            with open(mapping_path, "r") as f:
+            with open(mapping_path, "r", encoding='utf-8') as f:
                 self.label_mapping = json.load(f)
         else:
             self.label_mapping = None
-        print("Model loaded successfully.")
+        print(f"Model loaded successfully on {self.device}.")
 
     def predict(self, text: str):
         if self.model is None or self.tokenizer is None:
@@ -33,16 +38,25 @@ class ModelService:
         processed_text = preprocess_text(text)
         inputs = self.tokenizer(processed_text, return_tensors="pt", truncation=True, max_length=256, padding=True)
 
+        # Move inputs to same device as model
+        inputs = {k: v.to(self.device) for k, v in inputs.items()}
+
         with torch.no_grad():
             outputs = self.model(**inputs)
             logits = outputs.logits
             probabilities = torch.nn.functional.softmax(logits, dim=-1)
 
-        probs = probabilities[0].tolist()
+        probs = probabilities[0].cpu().tolist()
 
         results = []
         for i, prob in enumerate(probs):
-            label = self.model.config.id2label.get(str(i), str(i))
+            # Check for label in multiple places for robustness
+            label = "unknown"
+            if hasattr(self.model.config, 'id2label'):
+                label = self.model.config.id2label.get(str(i), self.model.config.id2label.get(i, str(i)))
+            elif self.label_mapping and 'id2label' in self.label_mapping:
+                label = self.label_mapping['id2label'].get(str(i), self.label_mapping['id2label'].get(i, str(i)))
+
             results.append({"label": label, "confidence": float(prob)})
 
         # Sort by confidence descending

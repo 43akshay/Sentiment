@@ -1,6 +1,6 @@
 import pandas as pd
 import torch
-from transformers import DistilBertTokenizer, DistilBertForSequenceClassification, Trainer, TrainingArguments
+from transformers import AutoTokenizer, AutoModelForSequenceClassification, Trainer, TrainingArguments
 from datasets import Dataset
 import json
 import os
@@ -10,7 +10,12 @@ from sklearn.metrics import accuracy_score, precision_recall_fscore_support
 
 def compute_metrics(pred):
     labels = pred.label_ids
-    preds = pred.predictions.argmax(-1)
+    # pred.predictions can be a tuple (logits, hidden_states, attentions)
+    if isinstance(pred.predictions, tuple):
+        logits = pred.predictions[0]
+    else:
+        logits = pred.predictions
+    preds = logits.argmax(-1)
     precision, recall, f1, _ = precision_recall_fscore_support(labels, preds, average='weighted')
     acc = accuracy_score(labels, preds)
     return {
@@ -28,17 +33,21 @@ def train(data_path, epochs=3, batch_size=16):
         print(f"Error: Data file {data_path} not found.")
         return
 
-    with open(data_path, 'r') as f:
+    with open(data_path, 'r', encoding='utf-8') as f:
         for line in f:
             if ';' in line:
                 parts = line.strip().rsplit(';', 1)
                 if len(parts) == 2:
                     text, label = parts
-                    texts.append(preprocess_text(text))
-                    labels.append(label)
+                    # Normalize text and labels
+                    processed_text = preprocess_text(text)
+                    processed_label = label.strip().lower()
+                    if processed_text and processed_label:
+                        texts.append(processed_text)
+                        labels.append(processed_label)
 
     if not texts:
-        print("Error: No data found in the file.")
+        print("Error: No valid data found in the file.")
         return
 
     unique_labels = sorted(list(set(labels)))
@@ -53,8 +62,10 @@ def train(data_path, epochs=3, batch_size=16):
     dataset = Dataset.from_pandas(df)
 
     # Ensure we have enough samples to split
-    if len(dataset) > 1:
-        dataset = dataset.train_test_split(test_size=min(0.2, 1.0/len(dataset)))
+    if len(dataset) >= 2:
+        # If dataset is very small, ensure at least 1 sample in test
+        test_size = max(0.1, 1.0/len(dataset)) if len(dataset) < 10 else 0.2
+        dataset = dataset.train_test_split(test_size=test_size)
         train_ds = dataset["train"]
         test_ds = dataset["test"]
     else:
@@ -62,7 +73,7 @@ def train(data_path, epochs=3, batch_size=16):
         test_ds = dataset
 
     model_name = "distilbert-base-uncased"
-    tokenizer = DistilBertTokenizer.from_pretrained(model_name)
+    tokenizer = AutoTokenizer.from_pretrained(model_name)
 
     def tokenize_function(examples):
         return tokenizer(examples["text"], padding="max_length", truncation=True, max_length=256)
@@ -70,7 +81,7 @@ def train(data_path, epochs=3, batch_size=16):
     train_tokenized = train_ds.map(tokenize_function, batched=True)
     test_tokenized = test_ds.map(tokenize_function, batched=True)
 
-    model = DistilBertForSequenceClassification.from_pretrained(
+    model = AutoModelForSequenceClassification.from_pretrained(
         model_name,
         num_labels=num_labels,
         id2label=id2label,
@@ -79,6 +90,10 @@ def train(data_path, epochs=3, batch_size=16):
 
     output_dir = "./models/sentiment_model"
     os.makedirs(output_dir, exist_ok=True)
+
+    # Check if GPU is available
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    print(f"Training on: {device}")
 
     training_args = TrainingArguments(
         output_dir="./outputs",
@@ -89,9 +104,10 @@ def train(data_path, epochs=3, batch_size=16):
         weight_decay=0.01,
         logging_dir="./outputs/logs",
         logging_steps=1,
-        evaluation_strategy="epoch" if len(dataset) > 1 else "no",
-        save_strategy="epoch" if len(dataset) > 1 else "no",
-        load_best_model_at_end=True if len(dataset) > 1 else False,
+        eval_strategy="epoch" if len(dataset) >= 2 else "no",
+        save_strategy="epoch" if len(dataset) >= 2 else "no",
+        load_best_model_at_end=True if len(dataset) >= 2 else False,
+        no_cuda=(device == "cpu"),
     )
 
     trainer = Trainer(
@@ -99,6 +115,7 @@ def train(data_path, epochs=3, batch_size=16):
         args=training_args,
         train_dataset=train_tokenized,
         eval_dataset=test_tokenized,
+        tokenizer=tokenizer,
         compute_metrics=compute_metrics,
     )
 
@@ -108,14 +125,17 @@ def train(data_path, epochs=3, batch_size=16):
     trainer.save_model(output_dir)
     tokenizer.save_pretrained(output_dir)
 
-    # Save label mapping explicitly just in case
-    with open(os.path.join(output_dir, "label_mapping.json"), "w") as f:
-        json.dump({"label2id": label2id, "id2label": id2label}, f)
+    # Save label mapping explicitly
+    with open(os.path.join(output_dir, "label_mapping.json"), "w", encoding='utf-8') as f:
+        json.dump({"label2id": label2id, "id2label": id2label}, f, indent=2)
 
     # Save final metrics
-    eval_results = trainer.evaluate()
-    with open("./outputs/metrics.json", "w") as f:
-        json.dump(eval_results, f)
+    try:
+        eval_results = trainer.evaluate()
+        with open("./outputs/metrics.json", "w", encoding='utf-8') as f:
+            json.dump(eval_results, f, indent=2)
+    except Exception as e:
+        print(f"Could not save metrics: {e}")
 
     print(f"Training complete. Model saved to {output_dir}")
 
