@@ -5,6 +5,7 @@ from datasets import Dataset
 import json
 import os
 import argparse
+import inspect
 from preprocess import preprocess_text
 from sklearn.metrics import accuracy_score, precision_recall_fscore_support
 
@@ -95,19 +96,7 @@ def train(data_path, epochs=3, batch_size=16):
     device = "cuda" if torch.cuda.is_available() else "cpu"
     print(f"Training on: {device}")
 
-    training_args = TrainingArguments(
-        output_dir="./outputs",
-        num_train_epochs=epochs,
-        per_device_train_batch_size=batch_size,
-        per_device_eval_batch_size=batch_size,
-        warmup_steps=0,
-        weight_decay=0.01,
-        logging_dir="./outputs/logs",
-        logging_steps=1,
-        evaluation_strategy="epoch" if len(dataset) >= 2 else "no",
-        save_strategy="epoch" if len(dataset) >= 2 else "no",
-        load_best_model_at_end=True if len(dataset) >= 2 else False,
-    )
+    training_args = TrainingArguments(**build_training_args_kwargs(epochs, batch_size, len(dataset) >= 2))
 
     trainer = Trainer(
         model=model,
@@ -137,6 +126,43 @@ def train(data_path, epochs=3, batch_size=16):
         print(f"Could not save metrics: {e}")
 
     print(f"Training complete. Model saved to {output_dir}")
+
+
+def build_training_args_kwargs(epochs, batch_size, use_eval):
+    """Create TrainingArguments kwargs compatible across transformers versions."""
+    kwargs = {
+        "output_dir": "./outputs",
+        "num_train_epochs": epochs,
+        "per_device_train_batch_size": batch_size,
+        "per_device_eval_batch_size": batch_size,
+        "warmup_steps": 0,
+        "weight_decay": 0.01,
+        "logging_dir": "./outputs/logs",
+        "logging_steps": 1,
+    }
+
+    params = inspect.signature(TrainingArguments.__init__).parameters
+    eval_value = "epoch" if use_eval else "no"
+
+    # evaluation_strategy was renamed to eval_strategy in newer versions.
+    if "evaluation_strategy" in params:
+        kwargs["evaluation_strategy"] = eval_value
+    elif "eval_strategy" in params:
+        kwargs["eval_strategy"] = eval_value
+
+    # These options are only valid when evaluation/checkpointing is enabled.
+    if use_eval:
+        if "save_strategy" in params:
+            kwargs["save_strategy"] = "epoch"
+        if "load_best_model_at_end" in params:
+            kwargs["load_best_model_at_end"] = True
+    else:
+        if "save_strategy" in params:
+            kwargs["save_strategy"] = "no"
+        if "load_best_model_at_end" in params:
+            kwargs["load_best_model_at_end"] = False
+
+    return kwargs
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
