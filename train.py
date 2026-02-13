@@ -99,13 +99,14 @@ def train(data_path, epochs=3, batch_size=16):
     training_args = TrainingArguments(**build_training_args_kwargs(epochs, batch_size, len(dataset) >= 2))
 
     trainer = Trainer(
-        model=model,
-        args=training_args,
-        train_dataset=train_tokenized,
-        eval_dataset=test_tokenized,
-        tokenizer=tokenizer,
-        compute_metrics=compute_metrics,
-    )
+    model=model,
+    args=training_args,
+    train_dataset=train_tokenized,
+    eval_dataset=test_tokenized,
+    compute_metrics=compute_metrics,
+)
+
+    
 
     trainer.train()
 
