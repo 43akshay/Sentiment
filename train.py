@@ -8,16 +8,20 @@ import argparse
 import inspect
 from preprocess import preprocess_text
 from sklearn.metrics import accuracy_score, precision_recall_fscore_support
+import numpy as np
 
 def compute_metrics(pred):
     labels = pred.label_ids
-    # pred.predictions can be a tuple (logits, hidden_states, attentions)
     if isinstance(pred.predictions, tuple):
         logits = pred.predictions[0]
     else:
         logits = pred.predictions
-    preds = logits.argmax(-1)
-    precision, recall, f1, _ = precision_recall_fscore_support(labels, preds, average='weighted')
+
+    # Multi-label classification uses sigmoid
+    probs = 1 / (1 + np.exp(-logits))
+    preds = (probs > 0.5).astype(float)
+
+    precision, recall, f1, _ = precision_recall_fscore_support(labels, preds, average='macro', zero_division=0)
     acc = accuracy_score(labels, preds)
     return {
         'accuracy': acc,
@@ -26,40 +30,56 @@ def compute_metrics(pred):
         'recall': recall
     }
 
-def train(data_path, epochs=3, batch_size=16):
-    # Load data
-    texts = []
-    labels = []
-    if not os.path.exists(data_path):
-        print(f"Error: Data file {data_path} not found.")
-        return
+def load_data(data_paths):
+    if isinstance(data_paths, str):
+        data_paths = [data_paths]
 
-    with open(data_path, 'r', encoding='utf-8') as f:
-        for line in f:
-            if ';' in line:
-                parts = line.strip().rsplit(';', 1)
-                if len(parts) == 2:
-                    text, label = parts
-                    # Normalize text and labels
-                    processed_text = preprocess_text(text)
-                    processed_label = label.strip().lower()
-                    if processed_text and processed_label:
-                        texts.append(processed_text)
-                        labels.append(processed_label)
+    texts = []
+    labels_list = [] # List of lists of labels for each text
+
+    for path in data_paths:
+        if not os.path.exists(path):
+            print(f"Warning: Data file {path} not found.")
+            continue
+
+        with open(path, 'r', encoding='utf-8') as f:
+            for line in f:
+                if ';' in line:
+                    parts = line.strip().rsplit(';', 1)
+                    if len(parts) == 2:
+                        text, label_str = parts
+                        processed_text = preprocess_text(text)
+                        # Support multiple labels separated by commas
+                        raw_labels = [l.strip().lower() for l in label_str.split(',')]
+                        if processed_text and raw_labels:
+                            texts.append(processed_text)
+                            labels_list.append(raw_labels)
+    return texts, labels_list
+
+def train(data_paths, epochs=3, batch_size=16):
+    # Load data from multiple files
+    texts, labels_list = load_data(data_paths)
 
     if not texts:
-        print("Error: No valid data found in the file.")
+        print("Error: No valid data found in the files.")
         return
 
-    unique_labels = sorted(list(set(labels)))
-    label2id = {label: i for i, label in enumerate(unique_labels)}
+    # Flatten labels to find unique set
+    all_unique_labels = sorted(list(set([l for sublist in labels_list for l in sublist])))
+    label2id = {label: i for i, label in enumerate(all_unique_labels)}
     id2label = {str(i): label for label, i in label2id.items()}
 
-    num_labels = len(unique_labels)
-    label_ids = [label2id[l] for l in labels]
+    num_labels = len(all_unique_labels)
+
+    # Create multi-hot encoded labels
+    label_matrix = np.zeros((len(labels_list), num_labels))
+    for i, labels in enumerate(labels_list):
+        for l in labels:
+            if l in label2id:
+                label_matrix[i, label2id[l]] = 1.0
 
     # Create dataset
-    df = pd.DataFrame({'text': texts, 'label': label_ids})
+    df = pd.DataFrame({'text': texts, 'label': list(label_matrix)})
     dataset = Dataset.from_pandas(df)
 
     # Ensure we have enough samples to split
@@ -86,7 +106,8 @@ def train(data_path, epochs=3, batch_size=16):
         model_name,
         num_labels=num_labels,
         id2label=id2label,
-        label2id=label2id
+        label2id=label2id,
+        problem_type="multi_label_classification"
     )
 
     output_dir = "./models/sentiment_model"
@@ -106,7 +127,7 @@ def train(data_path, epochs=3, batch_size=16):
     compute_metrics=compute_metrics,
 )
 
-    
+
 
     trainer.train()
 
@@ -167,9 +188,11 @@ def build_training_args_kwargs(epochs, batch_size, use_eval):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--data", type=str, default="data/train.txt")
+    parser.add_argument("--data", type=str, default="data/train.txt,data/mental.txt")
     parser.add_argument("--epochs", type=int, default=3)
     parser.add_argument("--batch_size", type=int, default=16)
     args = parser.parse_args()
 
-    train(args.data, args.epochs, args.batch_size)
+    # Split data paths if multiple are provided
+    data_paths = args.data.split(',')
+    train(data_paths, args.epochs, args.batch_size)
