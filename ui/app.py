@@ -102,7 +102,7 @@ st.markdown("""
             footer {visibility: hidden;}
             header {visibility: hidden;}
         </style>
-        """
+        """)
 
 st.markdown(get_theme_css(st.session_state.dark_mode), unsafe_allow_html=True)
 

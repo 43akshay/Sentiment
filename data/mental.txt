@@ -1,20 +1,1000 @@
-The thought of relationships fills me with dread;anxiety
-My energy levels are very unpredictable;bipolar
-I feel empty even when traveling;depression
-My relationships are improving;positive
-I can't stop worrying that public speaking;anxiety
-My anxiety is making it hard to family gatherings;anxiety
-I feel empty even when making decisions;depression
-I feel stressed whenever I think about public speaking;stress
-I feel numb when I try to making decisions;depression
-I'm stressed out by public speaking;stress
-My depression makes it impossible to meeting new people;depression
-The stress of public speaking is overwhelming;stress
-The fear of traveling keeps me awake at night;anxiety
-I feel depressed because family gatherings;depression
-I can't stop worrying that social events;anxiety
-I'm proud of my progress in therapy;positive
-I feel numb when I try to family gatherings;depression
-I no longer care about being alone;depression
-I've lost all motivation to job interviews;depression
-I feel depressed because job interviews;depression
+The thought of relationships fills me with dread,anxiety
+My energy levels are very unpredictable,bipolar
+I feel empty even when traveling,depression
+My relationships are improving,positive
+I can't stop worrying that public speaking,anxiety
+My anxiety is making it hard to family gatherings,anxiety
+I feel empty even when making decisions,depression
+I feel stressed whenever I think about public speaking,stress
+I feel numb when I try to making decisions,depression
+I'm stressed out by public speaking,stress
+My depression makes it impossible to meeting new people,depression
+The stress of public speaking is overwhelming,stress
+The fear of traveling keeps me awake at night,anxiety
+I feel depressed because family gatherings,depression
+I can't stop worrying that social events,anxiety
+I'm proud of my progress in therapy,positive
+I feel numb when I try to family gatherings,depression
+I no longer care about being alone,depression
+I've lost all motivation to job interviews,depression
+I feel depressed because job interviews,depression
+I feel guilty about surviving when others didn't,ptsd
+I have grandiose thoughts during high episodes,bipolar
+Depression has taken away my ability to relationships,depression
+The thought of work fills me with dread,anxiety
+I'm terrified of work and it affects my daily life,anxiety
+I feel emotionally stable and happy,positive
+I'm stressed out by work,stress
+My anxiety spikes when being alone,anxiety
+I'm stressed because I have to public speaking,stress
+I no longer care about social events,depression
+I have intrusive thoughts about what happened,ptsd
+I feel depressed because public speaking,depression
+I feel panicked when I think about making decisions,anxiety
+I'm terrified of family gatherings and it affects my daily life,anxiety
+My worry about social events is consuming me,anxiety
+The fear of being alone keeps me awake at night,anxiety
+I feel stressed whenever I think about school,stress
+The fear of family gatherings keeps me awake at night,anxiety
+Certain smells trigger memories of the trauma,ptsd
+The stress of public speaking is affecting my health,stress
+I've developed healthy coping mechanisms,positive
+I'm stressed because I have to being alone,stress
+My thinking becomes confused during mood episodes,bipolar
+My depression makes it impossible to work,depression
+I startle easily and feel on edge constantly since the incident,ptsd
+I've been experiencing anxiety about work,anxiety
+Certain smells trigger memories of the trauma,ptsd
+The fear of relationships keeps me awake at night,anxiety
+I can't find joy in family gatherings anymore,depression
+I startle easily and feel on edge constantly since the incident,ptsd
+I've been experiencing anxiety about being alone,anxiety
+I no longer care about family gatherings,depression
+I'm under pressure from being alone,stress
+I can't find joy in school anymore,depression
+The constant stress from relationships is wearing me down,stress
+The thought of dating fills me with dread,anxiety
+The demands of being alone are too much,stress
+I feel detached from reality sometimes,ptsd
+I'm anxious whenever I have to school,anxiety
+My depression makes it impossible to school,depression
+I have trouble feeling positive emotions anymore,ptsd
+My anxiety is making it hard to job interviews,anxiety
+I'm terrified of making decisions and it affects my daily life,anxiety
+I've been experiencing anxiety about meeting new people,anxiety
+The stress of traveling is overwhelming,stress
+I feel numb when I try to public speaking,depression
+I'm anxious whenever I have to traveling,anxiety
+The constant stress from social events is wearing me down,stress
+My worry about relationships is consuming me,anxiety
+I feel like something bad is going to happen,anxiety
+The fear of work keeps me awake at night,anxiety
+I'm under pressure from relationships,stress
+My depression makes it impossible to making decisions,depression
+The thought of family gatherings fills me with dread,anxiety
+I'm under pressure from relationships,stress
+My anxiety is making it hard to work,anxiety
+Depression has taken away my ability to traveling,depression
+My anxiety spikes when dating,anxiety
+I feel resilient and capable,positive
+I go through periods of feeling invincible followed by deep sadness,bipolar
+I'm terrified of meeting new people and it affects my daily life,anxiety
+I feel hopeless about the future,depression
+The thought of public speaking fills me with dread,anxiety
+I can't stop worrying that work,anxiety
+The fear of social events keeps me awake at night,anxiety
+I have trouble concentrating because of traumatic memories,ptsd
+The demands of public speaking are too much,stress
+I have grandiose thoughts during high episodes,bipolar
+I'm under pressure from public speaking,stress
+I'm terrified of job interviews and it affects my daily life,anxiety
+I feel hopeful about my recovery,positive
+I can't handle the stress of traveling,stress
+My depression prevents me from school,depression
+The stress of dating is overwhelming,stress
+I make impulsive decisions when I'm feeling really good,bipolar
+My depression makes it impossible to social events,depression
+I can't find joy in public speaking anymore,depression
+I can't stop worrying that dating,anxiety
+I feel empty even when job interviews,depression
+My depression prevents me from job interviews,depression
+I feel empty even when social events,depression
+I feel pressured to job interviews,stress
+I feel hopeful about my recovery,positive
+I'm anxious whenever I have to school,anxiety
+I talk very fast when I'm in a manic state,bipolar
+My emotions fluctuate dramatically,bipolar
+I no longer care about making decisions,depression
+The constant stress from family gatherings is wearing me down,stress
+I'm stressed out by being alone,stress
+I've been practicing self-care regularly,positive
+I'm terrified of making decisions and it affects my daily life,anxiety
+Depression has taken away my ability to social events,depression
+I'm under pressure from dating,stress
+The thought of work fills me with dread,anxiety
+I've lost all motivation to family gatherings,depression
+The thought of making decisions fills me with dread,anxiety
+I've been practicing self-care regularly,positive
+I have intrusive thoughts about what happened,ptsd
+I feel hopeful about my recovery,positive
+My mood has been consistently good,positive
+I've developed healthy coping mechanisms,positive
+I've lost all motivation to traveling,depression
+I have high energy followed by complete exhaustion,bipolar
+The thought of making decisions fills me with dread,anxiety
+I'm stressed out by being alone,stress
+I'm terrified of social events and it affects my daily life,anxiety
+I talk very fast when I'm in a manic state,bipolar
+I no longer care about dating,depression
+I'm terrified of traveling and it affects my daily life,anxiety
+I'm stressed out by job interviews,stress
+I'm anxious whenever I have to meeting new people,anxiety
+I've been experiencing anxiety about work,anxiety
+My anxiety spikes when meeting new people,anxiety
+My anxiety is making it hard to making decisions,anxiety
+I've been experiencing anxiety about relationships,anxiety
+I feel stressed whenever I think about social events,stress
+My depression prevents me from public speaking,depression
+The fear of relationships keeps me awake at night,anxiety
+The thought of job interviews fills me with dread,anxiety
+I'm terrified of school and it affects my daily life,anxiety
+I spent a lot of money during my manic phase,bipolar
+I'm under pressure from family gatherings,stress
+My anxiety spikes when being alone,anxiety
+I spent a lot of money during my manic phase,bipolar
+I'm terrified of being alone and it affects my daily life,anxiety
+I feel disconnected from job interviews due to depression,depression
+I feel stressed whenever I think about public speaking,stress
+I'm under pressure from job interviews,stress
+I'm terrified of dating and it affects my daily life,anxiety
+My anxiety is making it hard to family gatherings,anxiety
+My depression prevents me from work,depression
+I've developed healthy coping mechanisms,positive
+The stress of relationships is affecting my health,stress
+Depression has taken away my ability to making decisions,depression
+The constant stress from public speaking is wearing me down,stress
+The thought of family gatherings fills me with dread,anxiety
+I feel euphoric one day and depressed the next,bipolar
+I feel irritable and short-tempered lately,stress
+I feel stressed whenever I think about work,stress
+I avoid anything that reminds me of the event,ptsd
+I avoid anything that reminds me of the event,ptsd
+I'm stressed because I have to social events,stress
+I feel numb when I try to relationships,depression
+My depression makes it impossible to meeting new people,depression
+I feel disconnected from public speaking due to depression,depression
+I've lost all motivation to school,depression
+My anxiety spikes when family gatherings,anxiety
+I'm managing my mental health well with therapy,positive
+I'm stressed because I have to making decisions,stress
+I feel resilient and capable,positive
+My mood swings are disrupting my life,bipolar
+I feel euphoric one day and depressed the next,bipolar
+I've been experiencing anxiety about traveling,anxiety
+The thought of meeting new people fills me with dread,anxiety
+I feel emotionally stable and happy,positive
+I feel stressed whenever I think about social events,stress
+I feel connected to others and supported,positive
+I feel like I'm reliving the trauma,ptsd
+I can't handle the stress of family gatherings,stress
+I feel angry and irritable since the trauma,ptsd
+I've been experiencing anxiety about meeting new people,anxiety
+I'm anxious whenever I have to relationships,anxiety
+I no longer care about relationships,depression
+I can't find joy in public speaking anymore,depression
+My anxiety spikes when relationships,anxiety
+I feel angry and irritable since the trauma,ptsd
+I'm anxious whenever I have to making decisions,anxiety
+I'm under pressure from social events,stress
+I can't handle the stress of dating,stress
+I feel disconnected from making decisions due to depression,depression
+I'm struggling to balance work and personal life,stress
+My thinking becomes confused during mood episodes,bipolar
+I no longer care about meeting new people,depression
+I have trouble trusting people after what happened,ptsd
+My mood swings are disrupting my life,bipolar
+I feel empty even when public speaking,depression
+I feel depressed because making decisions,depression
+I'm anxious whenever I have to family gatherings,anxiety
+I feel connected to others and supported,positive
+My thoughts race during high periods and slow down during lows,bipolar
+I'm stressed because I have to family gatherings,stress
+The thought of job interviews fills me with dread,anxiety
+My anxiety is making it hard to making decisions,anxiety
+I can't stop worrying that job interviews,anxiety
+I feel panicked when I think about dating,anxiety
+My behavior becomes reckless when I'm manic,bipolar
+I avoid anything that reminds me of the event,ptsd
+I feel resilient and capable,positive
+I'm hypervigilant and always scanning for danger,ptsd
+I can't stop worrying that work,anxiety
+I have trouble concentrating because of traumatic memories,ptsd
+My depression prevents me from job interviews,depression
+I feel detached from reality sometimes,ptsd
+I feel pressured to dating,stress
+Depression has taken away my ability to dating,depression
+I can't find joy in work anymore,depression
+The thought of public speaking fills me with dread,anxiety
+My worry about job interviews is consuming me,anxiety
+I feel resilient and capable,positive
+I'm terrified of job interviews and it affects my daily life,anxiety
+I'm under pressure from relationships,stress
+I feel resilient and capable,positive
+I no longer care about meeting new people,depression
+I feel numb when I try to work,depression
+I've been experiencing anxiety about family gatherings,anxiety
+The fear of traveling keeps me awake at night,anxiety
+I feel burned out and exhausted,stress
+The fear of relationships keeps me awake at night,anxiety
+I feel numb when I try to traveling,depression
+I'm stressed out by work,stress
+My behavior becomes reckless when I'm manic,bipolar
+I feel pressured to making decisions,stress
+My worry about work is consuming me,anxiety
+Everything feels meaningless and pointless,depression
+I'm managing my mental health well with therapy,positive
+I feel depressed because school,depression
+I avoid anything that reminds me of the event,ptsd
+I feel content and at peace,positive
+I've been experiencing anxiety about public speaking,anxiety
+I've been experiencing anxiety about making decisions,anxiety
+I've lost all motivation to social events,depression
+Depression has taken away my ability to family gatherings,depression
+I'm hypervigilant and always scanning for danger,ptsd
+The stress of job interviews is overwhelming,stress
+My worry about relationships is consuming me,anxiety
+My worry about being alone is consuming me,anxiety
+I feel hopeful about my recovery,positive
+My anxiety spikes when school,anxiety
+I feel disconnected from job interviews due to depression,depression
+I have trouble concentrating because of traumatic memories,ptsd
+I'm terrified of work and it affects my daily life,anxiety
+I feel emotionally stable and happy,positive
+I feel disconnected from school due to depression,depression
+I feel empty even when family gatherings,depression
+I have trouble feeling positive emotions anymore,ptsd
+I feel disconnected from making decisions due to depression,depression
+I feel disconnected from making decisions due to depression,depression
+I'm proud of my progress in therapy,positive
+I no longer care about relationships,depression
+I startle easily and feel on edge constantly since the incident,ptsd
+My worry about social events is consuming me,anxiety
+My anxiety spikes when being alone,anxiety
+The constant stress from social events is wearing me down,stress
+I can't find joy in social events anymore,depression
+I feel numb when I try to dating,depression
+The stress of traveling is affecting my health,stress
+I can't stop worrying that meeting new people,anxiety
+I feel nervous and on edge most days,anxiety
+The stress of work is affecting my health,stress
+I feel empty even when making decisions,depression
+I feel disconnected from public speaking due to depression,depression
+My depression makes it impossible to public speaking,depression
+I can't find joy in traveling anymore,depression
+I'm under pressure from meeting new people,stress
+Depression has taken away my ability to job interviews,depression
+The fear of meeting new people keeps me awake at night,anxiety
+I talk very fast when I'm in a manic state,bipolar
+My mood changes are affecting my relationships,bipolar
+I feel numb when I try to meeting new people,depression
+I'm terrified of traveling and it affects my daily life,anxiety
+My worry about social events is consuming me,anxiety
+The stress of making decisions is overwhelming,stress
+My depression makes it impossible to public speaking,depression
+I've been experiencing anxiety about family gatherings,anxiety
+I can't handle the stress of social events,stress
+I feel empty even when meeting new people,depression
+I feel panicked when I think about being alone,anxiety
+My behavior becomes reckless when I'm manic,bipolar
+I'm managing my mental health well with therapy,positive
+I don't feel like eating or I eat too much,depression
+I've developed healthy coping mechanisms,positive
+The stress of meeting new people is affecting my health,stress
+The demands of job interviews are too much,stress
+I no longer care about job interviews,depression
+I feel angry and irritable since the trauma,ptsd
+I've been experiencing anxiety about work,anxiety
+I feel resilient and capable,positive
+I can't stop worrying that family gatherings,anxiety
+I feel hopeful about my recovery,positive
+I'm under pressure from being alone,stress
+I'm handling stress in healthy ways,positive
+I have high energy followed by complete exhaustion,bipolar
+I have high energy followed by complete exhaustion,bipolar
+I'm under pressure from social events,stress
+I can't handle the stress of school,stress
+I'm under pressure from public speaking,stress
+I no longer care about relationships,depression
+I've lost all motivation to dating,depression
+My anxiety is making it hard to being alone,anxiety
+I feel empty even when traveling,depression
+I've been experiencing anxiety about school,anxiety
+I've been practicing self-care regularly,positive
+I'm terrified of public speaking and it affects my daily life,anxiety
+I feel disconnected from traveling due to depression,depression
+My anxiety spikes when job interviews,anxiety
+My mood has been consistently good,positive
+My behavior becomes reckless when I'm manic,bipolar
+The constant stress from social events is wearing me down,stress
+I no longer care about job interviews,depression
+I feel restless and can't sit still,anxiety
+I feel resilient and capable,positive
+I'm stressed out by making decisions,stress
+I'm optimistic about my future,positive
+I feel pressured to meeting new people,stress
+The fear of job interviews keeps me awake at night,anxiety
+My emotions fluctuate dramatically,bipolar
+The stress of making decisions is overwhelming,stress
+My worry about social events is consuming me,anxiety
+I feel detached from reality sometimes,ptsd
+The constant stress from meeting new people is wearing me down,stress
+I feel stressed whenever I think about being alone,stress
+I feel disconnected from dating due to depression,depression
+I'm stressed out by dating,stress
+I'm managing my mental health well with therapy,positive
+I feel depressed because work,depression
+I feel numb when I try to social events,depression
+My anxiety spikes when meeting new people,anxiety
+The constant stress from making decisions is wearing me down,stress
+I'm terrified of being alone and it affects my daily life,anxiety
+My mood swings from very high to very low,bipolar
+My relationships are improving,positive
+I'm managing my mental health well with therapy,positive
+I startle easily and feel on edge constantly since the incident,ptsd
+My emotions fluctuate dramatically,bipolar
+I no longer care about being alone,depression
+I feel emotionally stable and happy,positive
+I've lost interest in activities I used to enjoy,depression
+The fear of family gatherings keeps me awake at night,anxiety
+The fear of job interviews keeps me awake at night,anxiety
+I've lost all motivation to public speaking,depression
+I've been practicing self-care regularly,positive
+My sleep patterns are extremely irregular,bipolar
+My anxiety spikes when social events,anxiety
+My anxiety is making it hard to school,anxiety
+I'm stressed out by family gatherings,stress
+I can't find joy in traveling anymore,depression
+I've lost all motivation to making decisions,depression
+I spent a lot of money during my manic phase,bipolar
+I've lost all motivation to dating,depression
+The stress of dating is overwhelming,stress
+The demands of school are too much,stress
+The fear of meeting new people keeps me awake at night,anxiety
+I feel depressed because family gatherings,depression
+I'm under pressure from family gatherings,stress
+I feel disconnected from relationships due to depression,depression
+I feel panicked when I think about making decisions,anxiety
+I have trouble concentrating because of traumatic memories,ptsd
+I've been experiencing anxiety about meeting new people,anxiety
+My anxiety is making it hard to work,anxiety
+My depression prevents me from social events,depression
+I'm terrified of work and it affects my daily life,anxiety
+My anxiety spikes when traveling,anxiety
+I talk very fast when I'm in a manic state,bipolar
+I'm anxious whenever I have to school,anxiety
+I'm enjoying spending time with friends and family,positive
+I no longer care about relationships,depression
+I feel disconnected from being alone due to depression,depression
+I feel depressed because social events,depression
+My depression makes it impossible to family gatherings,depression
+I'm under pressure from being alone,stress
+I've been experiencing anxiety about job interviews,anxiety
+I can't stop worrying that job interviews,anxiety
+I can't find joy in traveling anymore,depression
+My anxiety spikes when work,anxiety
+I've been experiencing anxiety about relationships,anxiety
+I avoid talking about what happened to me,ptsd
+My anxiety spikes when family gatherings,anxiety
+My anxiety is making it hard to public speaking,anxiety
+I've lost all motivation to dating,depression
+I'm under pressure from job interviews,stress
+I feel panicked when I think about job interviews,anxiety
+My behavior becomes reckless when I'm manic,bipolar
+My depression prevents me from public speaking,depression
+The fear of traveling keeps me awake at night,anxiety
+My depression makes it impossible to school,depression
+My depression makes it impossible to work,depression
+I can't stop worrying that relationships,anxiety
+Depression has taken away my ability to job interviews,depression
+I feel empty even when traveling,depression
+I feel stressed whenever I think about dating,stress
+My depression prevents me from dating,depression
+I no longer care about public speaking,depression
+My anxiety spikes when meeting new people,anxiety
+My mood swings are disrupting my life,bipolar
+I've been practicing self-care regularly,positive
+My depression makes it impossible to traveling,depression
+My depression prevents me from social events,depression
+I no longer care about work,depression
+I feel depressed because making decisions,depression
+I feel pressured to work,stress
+My depression prevents me from job interviews,depression
+I'm hypervigilant and always scanning for danger,ptsd
+I feel emotionally stable and happy,positive
+My emotions fluctuate dramatically,bipolar
+Sometimes I feel extremely energetic and other times completely drained,bipolar
+My worry about dating is consuming me,anxiety
+I feel numb when I try to job interviews,depression
+I can't find joy in family gatherings anymore,depression
+I've been experiencing anxiety about meeting new people,anxiety
+I feel worthless and like a burden to others,depression
+I no longer care about relationships,depression
+I'm hypervigilant and always scanning for danger,ptsd
+My mood has been consistently good,positive
+I feel depressed because job interviews,depression
+I'm stressed out by job interviews,stress
+I'm under pressure from dating,stress
+My anxiety is making it hard to public speaking,anxiety
+My thinking becomes confused during mood episodes,bipolar
+My depression prevents me from social events,depression
+I'm terrified of job interviews and it affects my daily life,anxiety
+I feel resilient and capable,positive
+My anxiety is making it hard to job interviews,anxiety
+I'm terrified of work and it affects my daily life,anxiety
+I feel depressed because family gatherings,depression
+The demands of being alone are too much,stress
+I feel stressed whenever I think about traveling,stress
+I feel panicked when I think about social events,anxiety
+I feel disconnected from being alone due to depression,depression
+Depression has taken away my ability to family gatherings,depression
+I feel emotionally stable and happy,positive
+I feel detached from reality sometimes,ptsd
+I can't stop worrying that public speaking,anxiety
+My depression prevents me from dating,depression
+I can't find joy in relationships anymore,depression
+My anxiety spikes when social events,anxiety
+The thought of family gatherings fills me with dread,anxiety
+I feel pressured to dating,stress
+The thought of work fills me with dread,anxiety
+The thought of school fills me with dread,anxiety
+I feel stressed whenever I think about being alone,stress
+The stress of job interviews is affecting my health,stress
+I've lost all motivation to making decisions,depression
+The thought of being alone fills me with dread,anxiety
+My depression prevents me from making decisions,depression
+I feel pressured to public speaking,stress
+I have high energy followed by complete exhaustion,bipolar
+My depression makes it impossible to work,depression
+I'm anxious whenever I have to job interviews,anxiety
+I feel empty even when family gatherings,depression
+The thought of social events fills me with dread,anxiety
+My worry about relationships is consuming me,anxiety
+The demands of job interviews are too much,stress
+I've been experiencing anxiety about social events,anxiety
+I'm stressed out by traveling,stress
+I've been experiencing anxiety about being alone,anxiety
+The fear of dating keeps me awake at night,anxiety
+I'm terrified of meeting new people and it affects my daily life,anxiety
+I feel numb when I try to meeting new people,depression
+I can't find joy in work anymore,depression
+I talk very fast when I'm in a manic state,bipolar
+I've lost all motivation to work,depression
+Loud noises make me jump and feel scared,ptsd
+I'm stressed out by job interviews,stress
+I feel numb when I try to job interviews,depression
+The thought of making decisions fills me with dread,anxiety
+I can't stop worrying that traveling,anxiety
+I feel numb when I try to social events,depression
+I'm hypervigilant and always scanning for danger,ptsd
+My relationships are improving,positive
+My depression prevents me from meeting new people,depression
+The fear of public speaking keeps me awake at night,anxiety
+I feel disconnected from dating due to depression,depression
+My mood has been consistently good,positive
+I feel empty even when family gatherings,depression
+My depression prevents me from being alone,depression
+I'm terrified of making decisions and it affects my daily life,anxiety
+I feel numb when I try to job interviews,depression
+I have episodes where I barely need sleep and then sleep for days,bipolar
+I've lost all motivation to traveling,depression
+I feel pressured to being alone,stress
+I've developed healthy coping mechanisms,positive
+Depression has taken away my ability to relationships,depression
+I feel stressed whenever I think about relationships,stress
+Depression has taken away my ability to making decisions,depression
+I feel euphoric one day and depressed the next,bipolar
+I feel disconnected from work due to depression,depression
+My anxiety is making it hard to meeting new people,anxiety
+My anxiety is making it hard to public speaking,anxiety
+I'm stressed out by social events,stress
+My depression prevents me from dating,depression
+The demands of relationships are too much,stress
+The thought of relationships fills me with dread,anxiety
+The stress of relationships is affecting my health,stress
+I'm under pressure from being alone,stress
+Certain smells trigger memories of the trauma,ptsd
+I feel detached from reality sometimes,ptsd
+I'm under pressure from public speaking,stress
+I feel pressured to school,stress
+Depression has taken away my ability to social events,depression
+I no longer care about making decisions,depression
+I feel pressured to job interviews,stress
+My thinking becomes confused during mood episodes,bipolar
+The fear of being alone keeps me awake at night,anxiety
+I can't stop worrying that making decisions,anxiety
+My anxiety spikes when traveling,anxiety
+My sleep patterns are extremely irregular,bipolar
+I can't stop thinking about worst-case scenarios,anxiety
+I can't find joy in relationships anymore,depression
+I feel panicked when I think about relationships,anxiety
+The fear of dating keeps me awake at night,anxiety
+My sleep patterns are extremely irregular,bipolar
+The constant stress from social events is wearing me down,stress
+I'm anxious whenever I have to job interviews,anxiety
+My anxiety is making it hard to making decisions,anxiety
+I feel emotionally stable and happy,positive
+My mood swings are disrupting my life,bipolar
+I've lost all motivation to family gatherings,depression
+I no longer care about dating,depression
+I feel depressed because social events,depression
+I've lost all motivation to school,depression
+I've lost all motivation to social events,depression
+I'm proud of my progress in therapy,positive
+The demands of meeting new people are too much,stress
+I feel stressed whenever I think about job interviews,stress
+I've been practicing self-care regularly,positive
+My worry about making decisions is consuming me,anxiety
+I'm stressed out by traveling,stress
+My depression makes it impossible to relationships,depression
+I no longer care about work,depression
+My worry about public speaking is consuming me,anxiety
+I'm terrified of traveling and it affects my daily life,anxiety
+I have trouble feeling positive emotions anymore,ptsd
+I feel numb when I try to relationships,depression
+I feel panicked when I think about family gatherings,anxiety
+My anxiety spikes when school,anxiety
+My mood has been consistently good,positive
+I have grandiose thoughts during high episodes,bipolar
+I feel disconnected from school due to depression,depression
+I spent a lot of money during my manic phase,bipolar
+I feel disconnected from school due to depression,depression
+My mood swings are disrupting my life,bipolar
+I'm anxious whenever I have to work,anxiety
+The stress of school is overwhelming,stress
+I'm terrified of meeting new people and it affects my daily life,anxiety
+I can't find joy in social events anymore,depression
+I no longer care about relationships,depression
+My depression makes it impossible to school,depression
+My depression makes it impossible to social events,depression
+I've been experiencing anxiety about social events,anxiety
+I've been experiencing anxiety about social events,anxiety
+The thought of school fills me with dread,anxiety
+I can't handle the stress of traveling,stress
+I've been experiencing anxiety about making decisions,anxiety
+I feel depressed because meeting new people,depression
+My depression prevents me from social events,depression
+I can't stop worrying that public speaking,anxiety
+The fear of family gatherings keeps me awake at night,anxiety
+I feel euphoric one day and depressed the next,bipolar
+My depression prevents me from social events,depression
+My relationships are improving,positive
+I feel stressed whenever I think about work,stress
+I'm anxious whenever I have to relationships,anxiety
+I can't find joy in making decisions anymore,depression
+I avoid anything that reminds me of the event,ptsd
+My anxiety spikes when social events,anxiety
+I feel angry and irritable since the trauma,ptsd
+My mood swings are disrupting my life,bipolar
+Depression has taken away my ability to family gatherings,depression
+I can't find joy in meeting new people anymore,depression
+My depression prevents me from traveling,depression
+I'm stressed out by school,stress
+I can't stop worrying that school,anxiety
+I feel balanced and in control of my emotions,positive
+I feel sad and empty most of the time,depression
+I can't find joy in meeting new people anymore,depression
+My anxiety spikes when work,anxiety
+I can't stop worrying that relationships,anxiety
+The fear of social events keeps me awake at night,anxiety
+I no longer care about dating,depression
+The thought of making decisions fills me with dread,anxiety
+I have intrusive thoughts about what happened,ptsd
+My mind races with anxious thoughts at night,anxiety
+I can't stop thinking about the traumatic event,ptsd
+My worry about being alone is consuming me,anxiety
+My depression prevents me from work,depression
+I feel angry and irritable since the trauma,ptsd
+I'm stressed because I have to work,stress
+Depression has taken away my ability to work,depression
+I can't handle the stress of family gatherings,stress
+I've been practicing self-care regularly,positive
+The constant stress from dating is wearing me down,stress
+I feel hopeful about my recovery,positive
+I have high energy followed by complete exhaustion,bipolar
+Depression has taken away my ability to relationships,depression
+I feel numb when I try to being alone,depression
+I feel panicked when I think about making decisions,anxiety
+My depression prevents me from family gatherings,depression
+I no longer care about family gatherings,depression
+The demands of social events are too much,stress
+I spent a lot of money during my manic phase,bipolar
+I'm stressed because I have to relationships,stress
+I have trouble feeling positive emotions anymore,ptsd
+The constant stress from social events is wearing me down,stress
+I'm stressed out by social events,stress
+The constant stress from relationships is wearing me down,stress
+I feel empty even when job interviews,depression
+I feel numb when I try to school,depression
+The demands of meeting new people are too much,stress
+I avoid anything that reminds me of the event,ptsd
+I feel pressured to meeting new people,stress
+I startle easily and feel on edge constantly since the incident,ptsd
+I no longer care about being alone,depression
+I feel numb when I try to meeting new people,depression
+Depression has taken away my ability to dating,depression
+The demands of school are too much,stress
+My anxiety is making it hard to making decisions,anxiety
+My sleep patterns are extremely irregular,bipolar
+I feel panicked when I think about social events,anxiety
+My anxiety spikes when job interviews,anxiety
+I'm terrified of dating and it affects my daily life,anxiety
+I feel stressed whenever I think about family gatherings,stress
+I avoid anything that reminds me of the event,ptsd
+My sleep patterns are extremely irregular,bipolar
+I feel empty even when being alone,depression
+The constant stress from relationships is wearing me down,stress
+My anxiety spikes when school,anxiety
+I feel empty even when social events,depression
+My behavior becomes reckless when I'm manic,bipolar
+The stress of social events is affecting my health,stress
+Depression has taken away my ability to traveling,depression
+I can't handle the stress of family gatherings,stress
+My depression prevents me from public speaking,depression
+I've been experiencing anxiety about social events,anxiety
+I feel disconnected from relationships due to depression,depression
+My relationships are improving,positive
+My mood swings are disrupting my life,bipolar
+I feel depressed because relationships,depression
+The stress of relationships is affecting my health,stress
+I feel panicked when I think about relationships,anxiety
+The stress of traveling is affecting my health,stress
+I'm stressed out by relationships,stress
+My depression makes it impossible to traveling,depression
+I have trouble feeling positive emotions anymore,ptsd
+The demands of public speaking are too much,stress
+I feel panicked when I think about school,anxiety
+I feel numb and disconnected from others,ptsd
+The stress of being alone is affecting my health,stress
+I'm stressed because I have to public speaking,stress
+I'm stressed out by school,stress
+I'm managing my mental health well with therapy,positive
+I feel disconnected from relationships due to depression,depression
+I'm anxious whenever I have to meeting new people,anxiety
+The thought of work fills me with dread,anxiety
+I feel motivated and productive,positive
+The thought of making decisions fills me with dread,anxiety
+The stress of meeting new people is affecting my health,stress
+My anxiety spikes when public speaking,anxiety
+I'm terrified of dating and it affects my daily life,anxiety
+My anxiety spikes when school,anxiety
+Certain smells trigger memories of the trauma,ptsd
+I have panic attacks that come out of nowhere,anxiety
+I'm anxious whenever I have to being alone,anxiety
+I'm stressed because I have to social events,stress
+I have trouble concentrating because of traumatic memories,ptsd
+I can't seem to relax even when I have free time,stress
+I feel connected to others and supported,positive
+I feel pressured to public speaking,stress
+I'm terrified of relationships and it affects my daily life,anxiety
+I'm managing my mental health well with therapy,positive
+I feel angry and irritable since the trauma,ptsd
+I'm terrified of relationships and it affects my daily life,anxiety
+I'm proud of my progress in therapy,positive
+I feel emotionally stable and happy,positive
+I've been experiencing anxiety about traveling,anxiety
+I feel guilty about surviving when others didn't,ptsd
+I've been experiencing anxiety about meeting new people,anxiety
+The stress of job interviews is affecting my health,stress
+I have high energy followed by complete exhaustion,bipolar
+I feel hopeful about my recovery,positive
+My thinking becomes confused during mood episodes,bipolar
+I feel depressed because job interviews,depression
+I can't find joy in job interviews anymore,depression
+I can't handle the stress of dating,stress
+I've lost all motivation to job interviews,depression
+I've lost all motivation to school,depression
+I feel pressured to meeting new people,stress
+I can't find joy in work anymore,depression
+My anxiety spikes when work,anxiety
+I feel numb when I try to work,depression
+I've been experiencing anxiety about meeting new people,anxiety
+My thinking becomes confused during mood episodes,bipolar
+I've lost all motivation to relationships,depression
+I'm terrified of public speaking and it affects my daily life,anxiety
+I'm terrified of being alone and it affects my daily life,anxiety
+I have trouble feeling positive emotions anymore,ptsd
+I feel depressed because work,depression
+I've lost all motivation to meeting new people,depression
+Depression has taken away my ability to relationships,depression
+I feel connected to others and supported,positive
+I've lost all motivation to job interviews,depression
+I have no energy and feel tired all day,depression
+I spent a lot of money during my manic phase,bipolar
+I feel numb when I try to family gatherings,depression
+I'm under pressure from job interviews,stress
+My mood has been consistently good,positive
+I have intrusive thoughts about what happened,ptsd
+I feel stressed whenever I think about meeting new people,stress
+I have grandiose thoughts during high episodes,bipolar
+I no longer care about work,depression
+My sleep patterns are extremely irregular,bipolar
+My anxiety is making it hard to job interviews,anxiety
+I feel disconnected from school due to depression,depression
+I've developed healthy coping mechanisms,positive
+My relationships are improving,positive
+The demands of work are too much,stress
+I feel pressured to family gatherings,stress
+I can't stop worrying that traveling,anxiety
+I've been experiencing anxiety about school,anxiety
+Certain smells trigger memories of the trauma,ptsd
+I'm anxious whenever I have to dating,anxiety
+The thought of making decisions fills me with dread,anxiety
+I spent a lot of money during my manic phase,bipolar
+My worry about job interviews is consuming me,anxiety
+I feel panicked when I think about job interviews,anxiety
+I feel panicked when I think about public speaking,anxiety
+I'm proud of my progress in therapy,positive
+I've lost all motivation to job interviews,depression
+Depression has taken away my ability to social events,depression
+I can't find joy in family gatherings anymore,depression
+I feel stressed whenever I think about work,stress
+I can't handle the stress of work,stress
+I have trouble concentrating because of traumatic memories,ptsd
+My emotions fluctuate dramatically,bipolar
+I feel depressed because public speaking,depression
+I feel detached from reality sometimes,ptsd
+Depression has taken away my ability to making decisions,depression
+I feel panicked when I think about job interviews,anxiety
+My anxiety spikes when dating,anxiety
+I have grandiose thoughts during high episodes,bipolar
+I'm terrified of school and it affects my daily life,anxiety
+I feel empty even when family gatherings,depression
+I'm under pressure from work,stress
+I can't find joy in family gatherings anymore,depression
+I'm hypervigilant and always scanning for danger,ptsd
+I've lost all motivation to social events,depression
+I'm under pressure from traveling,stress
+I feel depressed because school,depression
+My anxiety is making it hard to school,anxiety
+I feel emotionally stable and happy,positive
+My depression makes it impossible to meeting new people,depression
+I feel depressed because work,depression
+My worry about school is consuming me,anxiety
+My mood has been consistently good,positive
+I've been experiencing anxiety about public speaking,anxiety
+My depression prevents me from making decisions,depression
+My thinking becomes confused during mood episodes,bipolar
+My depression makes it impossible to making decisions,depression
+I'm stressed out by relationships,stress
+My anxiety spikes when public speaking,anxiety
+I feel stressed whenever I think about social events,stress
+I feel pressured to dating,stress
+I'm terrified of being alone and it affects my daily life,anxiety
+I feel panicked when I think about job interviews,anxiety
+My emotions fluctuate dramatically,bipolar
+I'm proud of my progress in therapy,positive
+Depression has taken away my ability to work,depression
+I feel guilty about surviving when others didn't,ptsd
+Depression has taken away my ability to meeting new people,depression
+I have high energy followed by complete exhaustion,bipolar
+I no longer care about relationships,depression
+I can't handle the stress of making decisions,stress
+I no longer care about work,depression
+My depression makes it impossible to dating,depression
+I have trouble feeling positive emotions anymore,ptsd
+My anxiety is making it hard to school,anxiety
+I avoid anything that reminds me of the event,ptsd
+My depression prevents me from traveling,depression
+I startle easily and feel on edge constantly since the incident,ptsd
+I feel panicked when I think about traveling,anxiety
+I'm stressed out by job interviews,stress
+My depression makes it impossible to relationships,depression
+I have intrusive thoughts about what happened,ptsd
+I've been sleeping too much or too little,depression
+The stress of making decisions is affecting my health,stress
+The constant stress from work is wearing me down,stress
+I'm stressed out by being alone,stress
+Certain smells trigger memories of the trauma,ptsd
+I feel panicked when I think about public speaking,anxiety
+I'm under pressure from family gatherings,stress
+My relationships are improving,positive
+I feel stressed whenever I think about dating,stress
+I feel connected to others and supported,positive
+My anxiety spikes when making decisions,anxiety
+Depression has taken away my ability to work,depression
+The constant stress from family gatherings is wearing me down,stress
+The thought of public speaking fills me with dread,anxiety
+I feel stressed whenever I think about school,stress
+I'm under pressure from public speaking,stress
+I no longer care about making decisions,depression
+I feel connected to others and supported,positive
+I feel guilty about surviving when others didn't,ptsd
+I feel empty even when relationships,depression
+Depression has taken away my ability to school,depression
+My depression prevents me from work,depression
+The fear of dating keeps me awake at night,anxiety
+I've been experiencing anxiety about making decisions,anxiety
+I'm anxious whenever I have to meeting new people,anxiety
+I've been experiencing anxiety about traveling,anxiety
+I'm anxious whenever I have to job interviews,anxiety
+I feel hopeful about my recovery,positive
+My anxiety spikes when relationships,anxiety
+I feel depressed because being alone,depression
+I have grandiose thoughts during high episodes,bipolar
+My depression prevents me from meeting new people,depression
+My anxiety spikes when being alone,anxiety
+Depression has taken away my ability to being alone,depression
+I'm hypervigilant and always scanning for danger,ptsd
+The constant stress from work is wearing me down,stress
+Depression has taken away my ability to dating,depression
+The stress of public speaking is overwhelming,stress
+I've been experiencing anxiety about work,anxiety
+I can't find joy in job interviews anymore,depression
+The thought of dating fills me with dread,anxiety
+I feel connected to others and supported,positive
+I feel panicked when I think about traveling,anxiety
+I feel panicked when I think about school,anxiety
+I'm managing my mental health well with therapy,positive
+I can't find joy in job interviews anymore,depression
+I'm terrified of school and it affects my daily life,anxiety
+My anxiety is making it hard to meeting new people,anxiety
+I can't handle the stress of dating,stress
+The stress of social events is overwhelming,stress
+My emotions fluctuate dramatically,bipolar
+I have too much on my plate and can't cope,stress
+I've been sleeping well and feel refreshed,positive
+I feel numb when I try to dating,depression
+I can't handle the stress of being alone,stress
+I feel connected to others and supported,positive
+I feel panicked when I think about making decisions,anxiety
+The fear of job interviews keeps me awake at night,anxiety
+I'm terrified of family gatherings and it affects my daily life,anxiety
+I spent a lot of money during my manic phase,bipolar
+The pressure is too much to handle,stress
+I've been practicing self-care regularly,positive
+I can't handle the stress of making decisions,stress
+My anxiety is making it hard to relationships,anxiety
+I can't handle the stress of traveling,stress
+I can't stop worrying that school,anxiety
+I can't handle the stress of dating,stress
+I've lost all motivation to school,depression
+My depression prevents me from job interviews,depression
+I feel stressed whenever I think about traveling,stress
+My depression prevents me from dating,depression
+I feel disconnected from public speaking due to depression,depression
+I feel disconnected from social events due to depression,depression
+I've been experiencing anxiety about job interviews,anxiety
+Certain smells trigger memories of the trauma,ptsd
+I've lost all motivation to dating,depression
+Depression has taken away my ability to job interviews,depression
+I feel numb when I try to family gatherings,depression
+I feel numb when I try to making decisions,depression
+I talk very fast when I'm in a manic state,bipolar
+I feel like I'm failing at everything,stress
+My anxiety spikes when job interviews,anxiety
+I have high energy followed by complete exhaustion,bipolar
+I no longer care about being alone,depression
+I've been experiencing anxiety about social events,anxiety
+The fear of being alone keeps me awake at night,anxiety
+My productivity varies wildly depending on my mood,bipolar
+The demands of dating are too much,stress
+My worry about traveling is consuming me,anxiety
+I'm under pressure from making decisions,stress
+The thought of job interviews fills me with dread,anxiety
+I feel depressed because being alone,depression
+The thought of being alone fills me with dread,anxiety
+The fear of public speaking keeps me awake at night,anxiety
+Depression has taken away my ability to job interviews,depression
+My anxiety is making it hard to social events,anxiety
+I'm terrified of social events and it affects my daily life,anxiety
+I'm terrified of traveling and it affects my daily life,anxiety
+My anxiety is making it hard to job interviews,anxiety
+I'm managing my mental health well with therapy,positive
+The fear of public speaking keeps me awake at night,anxiety
+The fear of school keeps me awake at night,anxiety
+The fear of being alone keeps me awake at night,anxiety
+I feel panicked when I think about family gatherings,anxiety
+I'm terrified of family gatherings and it affects my daily life,anxiety
+I talk very fast when I'm in a manic state,bipolar
+I feel resilient and capable,positive
+I feel guilty about surviving when others didn't,ptsd
+I can't find joy in school anymore,depression
+My depression makes it impossible to traveling,depression
+My depression prevents me from being alone,depression
+I'm proud of my progress in therapy,positive
+My anxiety is making it hard to family gatherings,anxiety
+I'm terrified of social events and it affects my daily life,anxiety
+My mood has been consistently good,positive
+I'm stressed out by traveling,stress
+I avoid places that remind me of what happened,ptsd
+I feel disconnected from making decisions due to depression,depression
+I'm stressed because I have to family gatherings,stress
+I've been experiencing anxiety about work,anxiety
+I've been practicing self-care regularly,positive
+The stress of relationships is affecting my health,stress
+My depression makes it impossible to relationships,depression
+I feel constantly on guard and alert,ptsd
+The thought of work fills me with dread,anxiety
+I startle easily and feel on edge constantly since the incident,ptsd
+I'm stressed because I have to social events,stress
+I feel numb when I try to dating,depression
+I'm under pressure from job interviews,stress
+My anxiety is making it hard to making decisions,anxiety
+I can't find joy in traveling anymore,depression
+I feel overwhelmed by my responsibilities,stress
+I have constant headaches from stress,stress
+I feel emotionally stable and happy,positive
+The thought of making decisions fills me with dread,anxiety
+Certain smells trigger memories of the trauma,ptsd
+I've been experiencing anxiety about traveling,anxiety
+My worry about work is consuming me,anxiety
+My worry about work is consuming me,anxiety
+I feel stressed whenever I think about traveling,stress
+I've developed healthy coping mechanisms,positive
+I've been experiencing anxiety about meeting new people,anxiety
+I feel grateful for the good things in my life,positive
+I feel numb when I try to job interviews,depression
+My mood has been consistently good,positive
+I have intrusive thoughts about what happened,ptsd
+I feel panicked when I think about relationships,anxiety
+I'm stressed out by traveling,stress
+I'm stressed out by job interviews,stress
+I feel resilient and capable,positive
+I'm proud of my progress in therapy,positive
+I feel empty even when traveling,depression
+I feel empty even when being alone,depression
+I feel disconnected from school due to depression,depression
+My sleep patterns are extremely irregular,bipolar
+I've lost all motivation to making decisions,depression
+I feel pressured to dating,stress
+I feel depressed because school,depression
+My anxiety spikes when job interviews,anxiety
+I'm anxious whenever I have to social events,anxiety
+I feel disconnected from relationships due to depression,depression
+I cycle between feeling on top of the world and feeling worthless,bipolar
+The stress of dating is overwhelming,stress
+I'm managing my mental health well with therapy,positive
+I feel empty even when social events,depression
+I can't find joy in relationships anymore,depression
+I have trouble getting out of bed in the morning,depression
+I constantly worry about things that might go wrong,anxiety
+I feel empty even when relationships,depression
+I feel numb when I try to job interviews,depression
+The constant stress from traveling is wearing me down,stress
+I've developed healthy coping mechanisms,positive
+I feel disconnected from traveling due to depression,depression
+My behavior becomes reckless when I'm manic,bipolar
+My depression makes it impossible to public speaking,depression
+I feel detached from reality sometimes,ptsd
+I've developed healthy coping mechanisms,positive
+I feel empty even when family gatherings,depression
+I've been experiencing anxiety about work,anxiety
+The constant stress from family gatherings is wearing me down,stress
+I'm terrified of school and it affects my daily life,anxiety
+I no longer care about social events,depression
+I've lost all motivation to traveling,depression
+I can't handle the stress of being alone,stress
+I've been experiencing anxiety about family gatherings,anxiety
+I can't handle the stress of traveling,stress
+I can't find joy in work anymore,depression
+I feel disconnected from relationships due to depression,depression
+I have trouble concentrating because of traumatic memories,ptsd
+I can't handle the stress of family gatherings,stress
+I'm hypervigilant and always scanning for danger,ptsd
+I feel guilty about surviving when others didn't,ptsd
+I'm terrified of relationships and it affects my daily life,anxiety
+I'm terrified of traveling and it affects my daily life,anxiety
+I avoid social situations because they make me anxious,anxiety
+My depression makes it impossible to meeting new people,depression
+I feel numb when I try to job interviews,depression
+I feel depressed because school,depression
+I've been experiencing anxiety about meeting new people,anxiety
+I feel disconnected from school due to depression,depression
+The thought of family gatherings fills me with dread,anxiety
+I no longer care about work,depression
+I have grandiose thoughts during high episodes,bipolar
+The demands of school are too much,stress
+I feel pressured to relationships,stress
+I feel empty even when dating,depression
+My worry about work is consuming me,anxiety
+The constant stress from meeting new people is wearing me down,stress
