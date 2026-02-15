@@ -3,7 +3,7 @@ from pydantic import BaseModel
 from model_service import get_model_service
 import uvicorn
 
-app = FastAPI(title="Sentiment Analysis API")
+app = FastAPI(title="SentiMind: Mental Health & Sentiment API")
 
 class PredictionRequest(BaseModel):
     text: str
@@ -18,7 +18,9 @@ async def predict(request: PredictionRequest):
 
     return {
         "text": result["text"],
-        "sentiment": result["top_prediction"]["label"],
+        "sentiment": result["overall_sentiment"],
+        "mental_health_indicator": result["mental_health_indicator"],
+        "sentiment_score": result["sentiment_score"],
         "confidence": result["top_prediction"]["confidence"],
         "all_scores": result["predictions"]
     }
