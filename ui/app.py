@@ -97,21 +97,17 @@ st.markdown("""
         padding: 0.5rem 2rem !important;
     }
 
-    /* Hide streamlit elements */
-    #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
-    header {visibility: hidden;}
-</style>
-""", unsafe_allow_html=True)
+            /* Hide streamlit elements */
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+        </style>
+        """
 
-# Initialize Session State
-if 'history' not in st.session_state:
-    st.session_state.history = []
-if 'total_analyses' not in st.session_state:
-    st.session_state.total_analyses = 0
+st.markdown(get_theme_css(st.session_state.dark_mode), unsafe_allow_html=True)
 
 # Top Header
-head_col1, head_col2 = st.columns([5, 1])
+head_col1, head_col2, head_col3 = st.columns([4, 1, 1])
 with head_col1:
     st.markdown('<div style="display: flex; align-items: center; gap: 0.5rem;"><span style="font-size: 2rem;">🧠</span><span class="logo-text">SentiMind: Mental Health & Sentiment AI</span></div>', unsafe_allow_html=True)
 with head_col2:
@@ -144,7 +140,7 @@ with main_col:
         else:
             with st.spinner("Processing emotional patterns..."):
                 result = service.predict(user_input)
-
+                
                 if "error" in result:
                     st.error(result["error"])
                 else:

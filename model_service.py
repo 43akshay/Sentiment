@@ -40,7 +40,7 @@ class ModelService:
             return {"error": "Model not loaded. Please train the model first."}
 
         processed_text = preprocess_text(text)
-        inputs = self.tokenizer(processed_text, return_tensors="pt", truncation=True, max_length=256, padding=True)
+        inputs = self.tokenizer(processed_text, return_tensors="pt", truncation=True, max_length=64, padding=True)
 
         # Move inputs to same device as model
         inputs = {k: v.to(self.device) for k, v in inputs.items()}
