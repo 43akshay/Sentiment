@@ -14,6 +14,11 @@ This system allows you to train a custom sentiment analysis model using DistilBE
 - `models/`: Directory where the trained model is saved.
 - `outputs/`: Directory for training logs and metrics.
 
+## 
+```
+   cd sentimental-analysis
+```
+
 ## Installation
 
 1. Install the required dependencies:

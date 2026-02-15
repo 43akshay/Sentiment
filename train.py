@@ -97,7 +97,7 @@ def train(data_paths, epochs=3, batch_size=16):
     tokenizer = AutoTokenizer.from_pretrained(model_name)
 
     def tokenize_function(examples):
-        return tokenizer(examples["text"], padding="max_length", truncation=True, max_length=256)
+        return tokenizer(examples["text"], padding="max_length", truncation=True, max_length=64)
 
     train_tokenized = train_ds.map(tokenize_function, batched=True)
     test_tokenized = test_ds.map(tokenize_function, batched=True)
