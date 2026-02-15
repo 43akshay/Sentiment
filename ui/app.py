@@ -9,100 +9,113 @@ from model_service import get_model_service
 
 st.set_page_config(page_title="SentiMind: Mental Health AI", page_icon="🧠", layout="wide")
 
-# Custom CSS for styling
-st.markdown("""
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+def get_theme_css(dark_mode: bool) -> str:
+    app_bg = "#0f172a" if dark_mode else "#f0f9ff"
+    card_bg = "#111827" if dark_mode else "#ffffff"
+    text_muted = "#cbd5e1" if dark_mode else "#64748b"
+    history_border = "#1f2937" if dark_mode else "#eef2f7"
 
-    html, body, [class*="css"] {
-        font-family: 'Inter', sans-serif;
-    }
+    return f"""
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
-    .stApp {
-        background-color: #f0f9ff;
-    }
+        html, body, [class*="css"] {{
+            font-family: 'Inter', sans-serif;
+        }}
 
-    .logo-text {
-        font-size: 1.5rem;
-        font-weight: 700;
-        color: #0369a1;
-    }
+        .stApp {{
+            background-color: {app_bg};
+        }}
 
-    .sentiment-badge {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        font-size: 1.5rem;
-        font-weight: 700;
-    }
+        .logo-text {{
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #0369a1;
+        }}
 
-    .sentiment-positive { color: #059669; }
-    .sentiment-negative { color: #dc2626; }
-    .sentiment-neutral { color: #4b5563; }
+        .sentiment-badge {{
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }}
 
-    .mh-badge {
-        padding: 0.25rem 0.75rem;
-        border-radius: 9999px;
-        font-weight: 700;
-        font-size: 1rem;
-        display: inline-block;
-    }
-    .mh-stable { background-color: #d1fae5; color: #065f46; }
-    .mh-alert { background-color: #fee2e2; color: #991b1b; }
+        .sentiment-positive {{ color: #059669; }}
+        .sentiment-negative {{ color: #dc2626; }}
+        .sentiment-neutral {{ color: #4b5563; }}
 
-    .confidence-text {
-        font-size: 0.75rem;
-        color: #64748b;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-        font-weight: 600;
-    }
+        .mh-badge {{
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-weight: 700;
+            font-size: 1rem;
+            display: inline-block;
+        }}
+        .mh-stable {{ background-color: #d1fae5; color: #065f46; }}
+        .mh-alert {{ background-color: #fee2e2; color: #991b1b; }}
 
-    .confidence-value {
-        font-size: 1.75rem;
-        font-weight: 700;
-    }
+        .confidence-text {{
+            font-size: 0.75rem;
+            color: {text_muted};
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 600;
+        }}
 
-    .history-item {
-        padding: 1rem;
-        border-radius: 0.75rem;
-        border: 1px solid #eef2f7;
-        margin-bottom: 0.75rem;
-        background-color: #ffffff;
-    }
+        .confidence-value {{
+            font-size: 1.75rem;
+            font-weight: 700;
+        }}
 
-    .score-circle {
-        width: 120px;
-        height: 120px;
-        border-radius: 50%;
-        border: 10px solid #e2e8f0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        margin: 0 auto;
-    }
+        .history-item {{
+            padding: 1rem;
+            border-radius: 0.75rem;
+            border: 1px solid {history_border};
+            margin-bottom: 0.75rem;
+            background-color: {card_bg};
+        }}
 
-    .score-value {
-        font-size: 2rem;
-        font-weight: 700;
-    }
+        .score-circle {{
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 10px solid #e2e8f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin: 0 auto;
+        }}
 
-    /* Custom button styling */
-    div.stButton > button[data-testid="stBaseButton-primary"] {
-        background-color: #0369a1 !important;
-        color: white !important;
-        border: none !important;
-        padding: 0.5rem 2rem !important;
-    }
+        .score-value {{
+            font-size: 2rem;
+            font-weight: 700;
+        }}
 
-            /* Hide streamlit elements */
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            header {visibility: hidden;}
-        </style>
-        """)
+        /* Custom button styling */
+        div.stButton > button[data-testid="stBaseButton-primary"] {{
+            background-color: #0369a1 !important;
+            color: white !important;
+            border: none !important;
+            padding: 0.5rem 2rem !important;
+        }}
+
+        /* Hide streamlit elements */
+        #MainMenu {{visibility: hidden;}}
+        footer {{visibility: hidden;}}
+        header {{visibility: hidden;}}
+    </style>
+    """
+
+
+if "dark_mode" not in st.session_state:
+    st.session_state.dark_mode = False
+if "history" not in st.session_state:
+    st.session_state.history = []
+if "total_analyses" not in st.session_state:
+    st.session_state.total_analyses = 0
 
 st.markdown(get_theme_css(st.session_state.dark_mode), unsafe_allow_html=True)
 
