@@ -4,6 +4,7 @@ transformers
 torch
 datasets
 pandas
+numpy
 scikit-learn
 streamlit
 python-multipart
